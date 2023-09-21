@@ -1,7 +1,6 @@
 import base64
 import os
 import numpy as np
-import hub as hub
 import tensorflow as tf
 import tensorflow_hub
 from flask import Flask, jsonify, request
