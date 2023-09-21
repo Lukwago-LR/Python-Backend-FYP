@@ -12,3 +12,4 @@ tensorflow>2.10
 Werkzeug==1.0.1
 wheel>0.41.0
 protobuf<4,>=3.9.2
+Jinja2>2.11.0
