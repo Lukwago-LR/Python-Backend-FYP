@@ -113,6 +113,7 @@ def create_data_batches(X, y=None, batch_size=BATCH_SIZE, valid_data=False, test
 def classify_image(image_path_list):
     # Turn the custom image into batch datasets
     custom_data = create_data_batches(image_path_list, test_data=True)
+    print(custom_data)
 
     # Loading the full model
     loaded_full_model = load_model("models/20230130-17341675100040-full-image-set-mobienetv2-Adam.h5")
