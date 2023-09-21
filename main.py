@@ -1,4 +1,3 @@
-import base64
 import os
 import numpy as np
 import tensorflow as tf
@@ -152,18 +151,5 @@ def upload_image():
         return "File saved successfully"
 
 
-def decode_image():
-    file = open("encoded.bin", "rb")
-    bytes_file = file.read()
-    file.close()
-
-    with open('image_name.txt', "r") as f:
-        lines = f.readline()
-
-    decoded_image = open(f"images/{lines}", "wb")
-    decoded_image.write(base64.b64decode(bytes_file))
-    decoded_image.close()
-
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
