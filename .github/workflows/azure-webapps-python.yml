@@ -37,11 +37,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Login via Az module
-        uses: azure/login@v1
+      - uses: azure/login@v1
         with:
-         creds: ${{secrets.AZURE_CREDENTIALS}}
-         enable-AzPSSession: true 
+         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Set up Python version
         uses: actions/setup-python@v3.0.0
