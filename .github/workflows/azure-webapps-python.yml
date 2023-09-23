@@ -37,9 +37,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: azure/login@v1
+      - uses: azure/login@v3
         with:
          creds: ${{ secrets.AZURE_CREDENTIALS }}
+         environment: 'AzureStack'
 
       - name: Set up Python version
         uses: actions/setup-python@v3.0.0
